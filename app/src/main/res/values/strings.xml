@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Praktikum Bangun Ruang</string>
+
+    <string-array name="option">
+        <item>Balok</item>
+        <item>Kerucut</item>
+        <item>Bola</item>
+    </string-array>
+</resources>
