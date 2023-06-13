@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:elevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_createdAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created At: "
+            android:layout_below="@id/tv_title"
+            android:textSize="12sp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_createdAt"
+            android:text="Nama Task"
+            android:layout_marginLeft="16dp"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

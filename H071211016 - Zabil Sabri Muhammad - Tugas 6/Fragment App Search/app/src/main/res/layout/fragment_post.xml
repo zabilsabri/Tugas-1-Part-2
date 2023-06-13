@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostFragment"
+    android:background="#CFD2CF">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_pict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_pict"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/choosephoto"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_capt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cv_pict">
+
+            <EditText
+                android:id="@+id/et_capt"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:background="@color/white"
+                android:hint="@string/write_caption"
+                android:inputType="text" />
+
+        </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_uploud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_capt"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/btn_uploud"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>

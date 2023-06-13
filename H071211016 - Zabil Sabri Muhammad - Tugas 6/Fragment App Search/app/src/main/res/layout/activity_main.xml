@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_above="@+id/btn_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/btn_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D8D8D8"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/homebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/searchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/baseline_search_24"/>
+
+        <ImageView
+            android:id="@+id/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/homebutton"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/personbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/addbutton"
+            android:src="@drawable/person" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
